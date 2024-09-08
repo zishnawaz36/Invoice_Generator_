@@ -7,7 +7,7 @@ body {
 }
 
 .invoice-container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 30px auto;
     padding: 30px;
     background-color: #fff;
@@ -29,7 +29,7 @@ body {
 
 .invoice-header {
     text-align: right;
-    flex-grow: 1;
+    margin-bottom: 20px; /* Add space below the invoice-header */
 }
 
 .invoice-header h5 {
@@ -136,32 +136,38 @@ button:active {
         display: none;
     }
 }
+
 .logo{
     height: 50px;
 }
+
 .invoice-details h4 {
     font-weight: normal; 
-  }
-  
-  .invoice-details h4 .label {
-    color: gray;
-    font-weight: normal; 
-  }
-  
-  .invoice-details h4 .date {
-    color: gray; 
-  }
-  .order-details h4{
-    font-weight: normal; 
-  }
-  .font-weight  h4 .label {
-    color: gray;
-    font-weight: normal
 }
+  
+.invoice-details h4 .label {
+    color: gray;
+    font-weight: normal; 
+}
+  
+.invoice-details h4 .date {
+    color: gray; 
+}
+
+.order-details h4{
+    font-weight: normal; 
+}
+
+.font-weight  h4 .label {
+    color: gray;
+    font-weight: normal;
+}
+
 .font-weight  h4 .date {
     color: gray; 
-  }
-  .table-container {
+}
+
+.table-container {
     width: 100%;
     margin: 20px auto;
     overflow-x: auto;
@@ -199,6 +205,38 @@ button:active {
     border-top: 2px solid #009879;
 }
 
+/* Aligning and ordering sections */
+.billing-details {
+    text-align: right;
+    margin-bottom: 20px; /* Add space below billing-details */
+}
 
-  
+.shippingDetails {
+    text-align: right; 
+    margin-bottom: 30px; /* Add space below shippingDetails */
+}
 
+.invoice-details {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.signatures input {
+    border: none;
+    border-style: none;
+    padding: 0; 
+    margin: 0;   
+    outline: none; 
+    box-shadow: none; 
+}
+.signatures input {
+    padding-left: 20px; 
+}
+
+.signatures input::placeholder {
+    color: #999; 
+}
+.totals{
+    
+    border: 1px solid rgb(199, 196, 196);
+    
+}

@@ -1,4 +1,3 @@
-
 import numberToWords from 'number-to-words';
 
 function ItemDetails({ items }) {
@@ -60,13 +59,27 @@ function ItemDetails({ items }) {
       </table>
 
       <div className="totals">
-        <h5>Total Summary</h5>
-        <p>Net Amount: {totals.netAmount.toFixed(2)}</p>
-        <p>Tax Amount: {totals.taxAmount.toFixed(2)}</p>
-        <p>Total: {totals.total.toFixed(2)}</p>
-        <p>Total (in words): {numberToWords.toWords(totals.total)}</p>
+        <h5>Summery</h5>
+        <table>
+          <thead>
+            <tr>
+              <th>Serial No.</th>
+              <th>Net Amount</th>
+              <th>Tax Amount</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td> {/* Serial Number for Totals */}
+              <td>{totals.netAmount.toFixed(2)}</td>
+              <td>{totals.taxAmount.toFixed(2)}</td>
+              <td>{totals.total.toFixed(2)}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>(in words): {numberToWords.toWords(totals.total)}</p>
       </div>
-
     </div>
   );
 }
